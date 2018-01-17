@@ -1,0 +1,122 @@
+
+===Author [ anik ]
+
+===Database lms_update_v120
+
+== Table structure for table author
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|author_name|varchar(30)|No|
+|date_of_birth|varchar(30)|Yes|NULL
+|date_of_dead|varchar(30)|Yes|NULL
+|about|varchar(100)|Yes|NULL
+
+== Table structure for table book_information
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|book_name|varchar(30)|No|
+|book_code|varchar(30)|No|
+|author_name|varchar(30)|Yes|NULL
+|publisher_name|varchar(30)|Yes|NULL
+|edition|varchar(30)|Yes|NULL
+|unit_price|int(11)|No|
+|qty|int(11)|No|
+|total_price|int(11)|No|
+|rack_no|int(11)|Yes|NULL
+|**issn_no**|varchar(30)|No|
+|category|varchar(30)|Yes|NULL
+|purchase_date|varchar(30)|Yes|NULL
+
+== Table structure for table book_issue
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|book_id|varchar(30)|No|
+|library_member_id|int(11)|No|
+|issue_date|varchar(30)|No|
+|expire_date|varchar(30)|No|
+|return_date|varchar(30)|No|
+|qty|int(11)|No|
+|_status|varchar(30)|Yes|NULL
+
+== Table structure for table book_recive
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|book_id|varchar(30)|No|
+|library_member_id|int(11)|No|
+|submit_date|varchar(30)|No|
+|qty|int(11)|No|
+|submit_by|varchar(30)|No|
+
+== Table structure for table category
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|category_name|varchar(30)|No|
+
+== Table structure for table edition
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|edition_name|varchar(30)|No|
+
+== Table structure for table librarianaccount
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|name|varchar(30)|No|
+|code_number|int(11)|No|
+|mobile_no|varchar(30)|Yes|NULL
+|email|varchar(30)|Yes|NULL
+|house_no|varchar(30)|Yes|NULL
+|road_no|varchar(30)|Yes|NULL
+|block_or_village|varchar(30)|Yes|NULL
+|thana|varchar(30)|Yes|NULL
+|district|varchar(30)|Yes|NULL
+|division|varchar(30)|Yes|NULL
+|shift|varchar(30)|No|
+|user_name|varchar(30)|No|
+|user_password|varchar(30)|No|
+
+== Table structure for table library_member
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|member_name|varchar(30)|No|
+|member_id|int(11)|No|
+|mobile_number|varchar(30)|Yes|NULL
+|email|varchar(30)|Yes|NULL
+|house_no|varchar(30)|Yes|NULL
+|road_no|varchar(30)|Yes|NULL
+|block_or_village|varchar(30)|Yes|NULL
+|thana|varchar(30)|Yes|NULL
+|district|varchar(30)|Yes|NULL
+|division|varchar(30)|Yes|NULL
+|report|varchar(30)|Yes|NULL
+
+== Table structure for table publisher
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|publisher_name|varchar(30)|No|
